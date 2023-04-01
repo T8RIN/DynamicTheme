@@ -41,7 +41,7 @@ Attention: ColorPicker not included in the package
 
 ### 1. Add dependencies
 
-![latestVersion](https://img.shields.io/github/v/release/t8rin/DynamicTheme)
+![latestVersion](https://img.shields.io/github/v/release/t8rin/DynamicTheme?style=for-the-badge)
 
 ```groovy
 repositories {
