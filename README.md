@@ -1,5 +1,10 @@
 
-# DynamicTheme
+<h1 align="center">
+
+DynamicTheme
+
+</h1>
+
 
 <p align="center">
  <img alt="material" src="https://custom-icon-badges.demolab.com/badge/material%20you-palegreen?style=for-the-badge&logoColor=black&logo=material-you"/></a>
@@ -10,8 +15,11 @@
   <a href="https://hits.sh/github.com/t8rin/dynamictheme/"><img alt="Hits" src="https://hits.sh/github.com/t8rin/dynamictheme.svg?style=for-the-badge&label=Views&extraCount=10&color=54856b"/></a>
 </p>
 
-Simple library that allows you to add dynamic colors implementation from android 5 and above to your compose project.
-Yes! Dynamic colors are now available even on old android devices, enjoy!
+
+<p align="center">
+
+
+</p>
 
 # Examples
 ## See [ImageResizer](https://github/t8rin/imageResizer)
