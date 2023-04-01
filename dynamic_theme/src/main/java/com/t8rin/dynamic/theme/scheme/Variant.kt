@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,18 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package com.t8rin.dynamic.theme.quantize;
-
-import java.util.Map;
+package com.t8rin.dynamic.theme.scheme
 
 /**
- * Represents result of a quantizer run
+ * Themes for Dynamic Color.
  */
-public final class QuantizerResult {
-    public final Map<Integer, Integer> colorToCount;
-
-    QuantizerResult(Map<Integer, Integer> colorToCount) {
-        this.colorToCount = colorToCount;
-    }
+enum class Variant {
+    MONOCHROME, NEUTRAL, TONAL_SPOT, VIBRANT, EXPRESSIVE, FIDELITY, CONTENT
 }

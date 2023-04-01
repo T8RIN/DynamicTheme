@@ -36,7 +36,6 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.t8rin.dynamic.theme.hct.Hct
 import com.t8rin.dynamic.theme.palettes.TonalPalette
 import com.t8rin.dynamic.theme.scheme.Scheme
-import kotlin.math.min
 
 /**
  * DynamicTheme allows you to dynamically change the color scheme of the content hierarchy.
@@ -47,9 +46,7 @@ import kotlin.math.min
 fun DynamicTheme(
     state: DynamicThemeState,
     typography: Typography = Typography(),
-    density: Density = LocalDensity.current.run {
-        Density(this.density, min(fontScale, 1f))
-    },
+    density: Density = LocalDensity.current,
     defaultColorTuple: ColorTuple,
     dynamicColor: Boolean = true,
     amoledMode: Boolean = false,
@@ -433,6 +430,7 @@ private fun Scheme.toDarkThemeColorScheme(
             TonalPalette.fromHueAndChroma(hue, chroma / 3.0)
         }
     }
+
     val a3 = colorTuple.tertiary?.toArgb().let {
         if (it != null) {
             TonalPalette.fromInt(it)
@@ -447,14 +445,14 @@ private fun Scheme.toDarkThemeColorScheme(
         primaryContainer = Color(primaryContainer),
         onPrimaryContainer = Color(onPrimaryContainer),
         inversePrimary = Color(inversePrimary),
-        secondary = Color(a2?.tone(80) ?: secondary),
-        onSecondary = Color(a2?.tone(20) ?: onSecondary),
-        secondaryContainer = Color(a2?.tone(30) ?: secondaryContainer),
-        onSecondaryContainer = Color(a2?.tone(90) ?: onSecondaryContainer),
-        tertiary = Color(a3?.tone(80) ?: tertiary),
-        onTertiary = Color(a3?.tone(20) ?: onTertiary),
-        tertiaryContainer = Color(a3?.tone(30) ?: tertiaryContainer),
-        onTertiaryContainer = Color(a3?.tone(90) ?: onTertiaryContainer),
+        secondary = Color(a2.tone(80)),
+        onSecondary = Color(a2.tone(20)),
+        secondaryContainer = Color(a2.tone(30)),
+        onSecondaryContainer = Color(a2.tone(90)),
+        tertiary = Color(a3.tone(80)),
+        onTertiary = Color(a3.tone(20)),
+        tertiaryContainer = Color(a3.tone(30)),
+        onTertiaryContainer = Color(a3.tone(90)),
         background = Color(background),
         onBackground = Color(onBackground),
         surface = Color(surface),
@@ -502,14 +500,14 @@ private fun Scheme.toLightThemeColorScheme(
         primaryContainer = Color(primaryContainer),
         onPrimaryContainer = Color(onPrimaryContainer),
         inversePrimary = Color(inversePrimary),
-        secondary = Color(a2?.tone(40) ?: secondary),
-        onSecondary = Color(a2?.tone(100) ?: onSecondary),
-        secondaryContainer = Color(a2?.tone(90) ?: secondaryContainer),
-        onSecondaryContainer = Color(a2?.tone(10) ?: onSecondaryContainer),
-        tertiary = Color(a3?.tone(40) ?: tertiary),
-        onTertiary = Color(a3?.tone(100) ?: onTertiary),
-        tertiaryContainer = Color(a3?.tone(90) ?: tertiaryContainer),
-        onTertiaryContainer = Color(a3?.tone(10) ?: onTertiaryContainer),
+        secondary = Color(a2.tone(40)),
+        onSecondary = Color(a2.tone(100)),
+        secondaryContainer = Color(a2.tone(90)),
+        onSecondaryContainer = Color(a2.tone(10)),
+        tertiary = Color(a3.tone(40)),
+        onTertiary = Color(a3.tone(100)),
+        tertiaryContainer = Color(a3.tone(90)),
+        onTertiaryContainer = Color(a3.tone(10)),
         background = Color(background),
         onBackground = Color(onBackground),
         surface = Color(surface),

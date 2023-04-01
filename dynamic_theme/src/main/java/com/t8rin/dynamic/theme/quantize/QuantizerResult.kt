@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,17 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.t8rin.dynamic.theme.scheme;
+package com.t8rin.dynamic.theme.quantize
 
 /**
- * Themes for Dynamic Color.
+ * Represents result of a quantizer run
  */
-public enum Variant {
-    MONOCHROME,
-    NEUTRAL,
-    TONAL_SPOT,
-    VIBRANT,
-    EXPRESSIVE,
-    FIDELITY,
-    CONTENT
-}
+class QuantizerResult internal constructor(val colorToCount: Map<Int, Int>)

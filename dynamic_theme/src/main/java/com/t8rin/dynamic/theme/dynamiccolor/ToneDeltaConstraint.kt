@@ -13,14 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package com.t8rin.dynamic.theme.dynamiccolor;
+package com.t8rin.dynamic.theme.dynamiccolor
 
 /**
- * Describes the relationship in lightness between two colors.
+ * Documents a constraint between two DynamicColors, in which their tones must have a certain
+ * distance from each other.
  */
-public enum TonePolarity {
-    DARKER,
-    LIGHTER,
-    NO_PREFERENCE
-}
+class ToneDeltaConstraint
+/**
+ * @param delta            the difference in tone required
+ * @param keepAway         the color to distance in tone from
+ * @param keepAwayPolarity whether the color to keep away from must be lighter, darker, or no
+ * preference, in which case it should
+ */(val delta: Double, val keepAway: DynamicColor, val keepAwayPolarity: TonePolarity)
