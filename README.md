@@ -69,6 +69,8 @@ fun DynamicThemeComposable() {
     // Also you can use ColorTupleItem to get represenation of your color scheme by three colors
 ```
 
+## Roadmap
+- [ ] Rewrite to Kotlin
 
 ## Find this repository useful? :heart:
 Support it by joining __[stargazers](https://github.com/t8rin/DynamicTheme/stargazers)__ for this repository. :star: <br>
