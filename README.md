@@ -1,3 +1,4 @@
+
 # DynamicTheme
 
 Simple library that allows you to add dynamic theme implementation from android 5 and above to your compose project.
@@ -5,7 +6,7 @@ Simple library that allows you to add dynamic theme implementation from android 
 # Examples
 ## See [ImageResizer](https://github/t8rin/imageResizer)
 
-https://user-images.githubusercontent.com/52178347/229303690-ec7ad907-b06e-4677-92fd-478a62141685.mp4
+![20230401_211227](https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif)
 
 
 Attention: ColorPicker not included in the package
