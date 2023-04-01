@@ -20,7 +20,7 @@ DynamicTheme
 Yes! Dynamic colors are now available even on old android devices, enjoy!</p>
 
 # Examples
-See [ImageResizer](https://github/t8rin/imageResizer)
+See [ImageResizer](https://github.com/t8rin/imageResizer)
 
 ![20230401_211227](https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif)
 
