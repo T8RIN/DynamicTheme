@@ -18,8 +18,7 @@ DynamicTheme
 <p align="center">Simple library that allows you to add dynamic colors implementation from android 5 and above to your compose project.
 Yes! Dynamic colors are now available even on old android devices, enjoy!</p>
 
-# Examples
-See [ImageResizer](https://github.com/t8rin/imageResizer)
+# Examples (See [ImageResizer](https://github.com/t8rin/imageResizer))
 
 ![20230401_211227](https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif)
 
@@ -27,7 +26,7 @@ See [ImageResizer](https://github.com/t8rin/imageResizer)
 Attention: ColorPicker not included in the package
 
 # Features
-* Declaring custom color scheme based on upt to three colors
+* Declaring custom color scheme based on up to three colors
 * Content based colorscheme by providing bitmap
 * Dynamic themeing from android 5
 * Amoled mode support
@@ -42,14 +41,26 @@ Attention: ColorPicker not included in the package
 
 ![latestVersion](https://img.shields.io/github/v/release/t8rin/DynamicTheme?style=for-the-badge)
 
+#### Kotlin (kts)
+```kotlin
+repositories {
+  maven { setUrl("https://jitpack.io") } // Add jitpack
+}
+dependencies {
+  implementation("com.github.t8rin:dynamictheme:LATEST_VERSION") // Replace "LATEST_VERSION" with preferrend version tag
+}
+```
+
+#### Groovy
 ```groovy
 repositories {
   maven { url 'https://jitpack.io' } // Add jitpack
 }
 dependencies {
-  implementation 'com.github.t8rin:dynamictheme:<latest_version>'
+  implementation 'com.github.t8rin:dynamictheme:LATEST_VERSION' // Replace "LATEST_VERSION" with preferrend version tag
 }
 ```
+
 ### 2. Add `DynamicTheme` call
 
 ```kotlin
