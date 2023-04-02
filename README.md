@@ -15,7 +15,7 @@ DynamicTheme
 </p>
 
 
-<p align="center">Simple library that allows you to add dynamic colors implementation from android 5 and above to your compose project.
+<p align="center">🎨 Jetpack Compose material theming library, which falls back onto a custom dynamic colors implementation based on wallpapers to support older API levels.
 Yes! Dynamic colors are now available even on old android devices, enjoy!</p>
 
 # Examples (See [ImageResizer](https://github.com/t8rin/imageResizer))
