@@ -20,7 +20,11 @@ Yes! Dynamic colors are now available even on old android devices, enjoy!</p>
 
 # Examples (See [ImageResizer](https://github.com/t8rin/imageResizer))
 
-![20230401_211227](https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif)
+<p align="center">
+ <img alt="material" src="https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif" width="36.6%"/></a>
+  <img alt="API" src="https://user-images.githubusercontent.com/52178347/229358462-560e987b-e401-446a-b791-c9a0fb93f8e8.jpg" width="30%"/></a>
+  <img alt="Kotlin" src="https://user-images.githubusercontent.com/52178347/229358471-5709401a-7518-4323-8f5c-b4e9b5a3bf5c.jpg" width="30%"/></a></a> 
+</p>
 
 
 Attention: ColorPicker not included in the package
