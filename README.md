@@ -10,25 +10,27 @@ DynamicTheme
  <img alt="material" src="https://custom-icon-badges.demolab.com/badge/material%20you-palegreen?style=for-the-badge&logoColor=black&logo=material-you"/></a>
   <img alt="API" src="https://img.shields.io/badge/Api%2021+-50f270?logo=android&logoColor=black&style=for-the-badge"/></a>
   <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-a503fc?logo=kotlin&logoColor=white&style=for-the-badge"/></a>
-  <img alt="java" src="https://img.shields.io/static/v1?style=for-the-badge&message=Java&color=bd9117&logo=openjdk&logoColor=FFFFFF&label="/>
   <img alt="Jetpack Compose" src="https://img.shields.io/static/v1?style=for-the-badge&message=Jetpack+Compose&color=4285F4&logo=Jetpack+Compose&logoColor=FFFFFF&label="/></a> 
   <a href="https://hits.sh/github.com/t8rin/dynamictheme/"><img alt="Hits" src="https://hits.sh/github.com/t8rin/dynamictheme.svg?style=for-the-badge&label=Views&extraCount=10&color=54856b"/></a>
 </p>
 
 
-<p align="center">Simple library that allows you to add dynamic colors implementation from android 5 and above to your compose project.
+<p align="center">🎨 Jetpack Compose material theming library, which falls back onto a custom dynamic colors implementation based on wallpapers to support older API levels.
 Yes! Dynamic colors are now available even on old android devices, enjoy!</p>
 
-# Examples
-See [ImageResizer](https://github.com/t8rin/imageResizer)
+# Examples (See [ImageResizer](https://github.com/t8rin/imageResizer))
 
-![20230401_211227](https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif)
+<p align="center">
+ <img alt="material" src="https://user-images.githubusercontent.com/52178347/229307585-a0c871f7-0bb8-43da-a7c7-cf1c41d6d35f.gif" width="36.6%"/></a>
+  <img alt="API" src="https://user-images.githubusercontent.com/52178347/229358462-560e987b-e401-446a-b791-c9a0fb93f8e8.jpg" width="30%"/></a>
+  <img alt="Kotlin" src="https://user-images.githubusercontent.com/52178347/229358471-5709401a-7518-4323-8f5c-b4e9b5a3bf5c.jpg" width="30%"/></a></a> 
+</p>
 
 
 Attention: ColorPicker not included in the package
 
 # Features
-* Declaring custom color scheme based on upt to three colors
+* Declaring custom color scheme based on up to three colors
 * Content based colorscheme by providing bitmap
 * Dynamic themeing from android 5
 * Amoled mode support
@@ -43,14 +45,26 @@ Attention: ColorPicker not included in the package
 
 ![latestVersion](https://img.shields.io/github/v/release/t8rin/DynamicTheme?style=for-the-badge)
 
+#### Kotlin (kts)
+```kotlin
+repositories {
+  maven { setUrl("https://jitpack.io") } // Add jitpack
+}
+dependencies {
+  implementation("com.github.t8rin:dynamictheme:LATEST_VERSION") // Replace "LATEST_VERSION" with preferrend version tag
+}
+```
+
+#### Groovy
 ```groovy
 repositories {
   maven { url 'https://jitpack.io' } // Add jitpack
 }
 dependencies {
-  implementation 'com.github.t8rin:dynamictheme:<latest_version>'
+  implementation 'com.github.t8rin:dynamictheme:LATEST_VERSION' // Replace "LATEST_VERSION" with preferrend version tag
 }
 ```
+
 ### 2. Add `DynamicTheme` call
 
 ```kotlin
